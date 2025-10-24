@@ -94,7 +94,7 @@ public class Main {
 
 ### Clone este repositório:
 
-`git clone https://github.com/lukazesz/guerreiros-poo.git`
+`git clone https://github.com/lukazesz/AtividadeGerreirosDaPOO`
 
 ### Entre na pasta do projeto:
 
