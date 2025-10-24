@@ -51,15 +51,15 @@ public class Guerreiro {
         return gerador.nextInt(2);
      }
 
-    //h) Método para estabelecer as regras da luta usando loop.
+    // Método para estabelecer as regras da luta usando loop.
      public void lutarLoop(Guerreiro oponente){
         while (energia > 0 && oponente.energia > 0) {
 
-            //Condicional para a luta acontecer.
+            // Condicional para a luta acontecer.
             if (atacar() != 0){
                 oponente.decremento();
 
-            //Condicional para declarar o vencedor.  
+            // Condicional para declarar o vencedor.  
             }if (oponente.energia <= 0) {
                     System.out.printf("%s ganhou!", nome);
                     break;
@@ -80,12 +80,12 @@ public class Guerreiro {
             if (atacar() != 0){
                 oponente.decremento();
                 
-            }else if (oponente.energia <= 0) {
+            }if (oponente.energia <= 0) {
                 return String.format("%s ganhou!", nome);
                     
-            }else if (oponente.atacar() != 0) {
+            }if (oponente.atacar() != 0) {
                 decremento();
-            }else if (energia <= 0) {
+            }if (energia <= 0) {
                 return String.format("%s ganhou!", oponente.nome);
             }
 
