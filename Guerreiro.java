@@ -66,7 +66,7 @@ public class Guerreiro {
             }if (oponente.atacar() != 0) {
                 decremento();
             }if (energia <= 0) {
-                System.out.printf("%s ganhou", oponente.nome);
+                System.out.printf("%s ganhou!", oponente.nome);
                 break;
             }
         }
@@ -81,12 +81,12 @@ public class Guerreiro {
                 oponente.decremento();
                 
             }if (oponente.energia <= 0) {
-                return String.format("%s ganhou!", nome);
+                return String.format("\n%s ganhou! ", nome);
                     
             }if (oponente.atacar() != 0) {
                 decremento();
             }if (energia <= 0) {
-                return String.format("%s ganhou!", oponente.nome);
+                return String.format("\n%s ganhou!", oponente.nome);
             }
 
             // Chamando o método novamente para garantir a recursão.
