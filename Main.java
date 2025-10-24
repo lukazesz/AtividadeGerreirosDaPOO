@@ -10,16 +10,16 @@ public class Main {
         lucas.lutarLoop(mateus);
         // mateus.lutarLoop(lucas);
 
-        // Iniciando uma luta com método de recursividade;
-        System.out.println(lucas.lutarRecursivo(mateus));
-        System.out.println(mateus.lutarRecursivo(lucas));
-
-
         // Chamando o método para recuperar energia se alimentando;
         lucas.seAlimentar();
+        mateus.seAlimentar();
+
+        // Iniciando uma luta com método de recursividade;
+        System.out.println(mateus.lutarRecursivo(lucas));
 
         // Exibindo as informações de um guerreiro.
         System.out.println(lucas.toString());
+        System.out.println(mateus.toString());
     }
     
 }
